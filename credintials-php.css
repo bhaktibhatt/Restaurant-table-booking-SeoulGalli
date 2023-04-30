@@ -1,0 +1,49 @@
+@import url('https://fonts.cdnfonts.com/css/ink-free');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    color: #000;
+    width:950px;
+    height: 400px;
+    border-radius: 30px;
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.table-container p{
+    color: #000;
+    font-size: 20px;
+}
+.table-container table{
+    display: block;
+    width: 80%;
+    border-collapse: collapse;
+    
+    
+}
+table td, table th{
+    width: 100%;    
+    padding: 10px;
+    border: 1px solid #2c2c2c;
+    text-align: center;
+    font-size: 30px;
+    max-width:max-content;
+}
+@media only screen and (max-width:600px){
+    .table-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        width: 350px;
+
+    }
+}

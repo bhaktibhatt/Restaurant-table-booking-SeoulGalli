@@ -18,6 +18,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 h1{
     margin-bottom: 20px;
@@ -44,7 +46,12 @@ h1{
     justify-content: center;
     border-radius: 30px;
 }
-
+.form-container p{
+    color: #000;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .inputs-table{
     padding-top: 20px;
     width: 900px;
@@ -90,6 +97,7 @@ select:hover{
     justify-content: space-around;
     align-items: center;
 }
+
 .btn-div{
     display: flex;
     justify-content: center;
@@ -104,21 +112,7 @@ select:hover{
     border-radius: 15px;
     font-size: 20px;
 }
-.table-container{
-    background: #fff;
-    color: #000;
-    width:950px;
-    height: 400px;
-    display: flex;
-    padding-top: 9px;
-    justify-content: center;
-    border-radius: 30px;
-}
 
-.table-container table{
-    display: block;
-    width: 100%;
-}
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -140,8 +134,45 @@ select:hover{
   background: #332f2d; 
 }
 @media only screen and (max-width:600px){
-    p{
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    .main  p{
         font-size: 20px;
+        text-align: center;;
+    }
+    .bg-img{
+       display: none;
+    }
+    .form-container{
+        margin-left: 2rem;
+        width: 400px;
+        height: 600px;
+        padding: 20px;
+    
+    }
+    .form-container p{
+        margin: 0;
+        font-size: 16px;
+        text-align: center;
+        margin-right: 0px;
+        width: fit-content;
+        margin-left: 20px;
+    }
+    .inputs-table{
+        flex-direction: column;
+        width: 450px;
+    }
+    .inputs-table input, .inputs-table select{
+        margin-top: 30px;
+    }
+    .credentials{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .credentials input{
+        margin-top: 10px;
     }
     
 }
