@@ -28,7 +28,8 @@ h1{
 }
 .main p{
     text-align: center;
-    margin-top: 0;
+    margin-top: 20px;
+    margin-bottom: 2px;
     font-size:30px;
     color: white;
     font-family: 'Raleway', sans-serif;
@@ -43,12 +44,7 @@ h1{
     justify-content: center;
     border-radius: 30px;
 }
-.form-container p{
-    color: #000;
-    font-size: 20px;
-    margin-top: 20px;
-    font-weight: 500;
-}
+
 .inputs-table{
     padding-top: 20px;
     width: 900px;
@@ -107,6 +103,21 @@ select:hover{
     width: 150px;
     border-radius: 15px;
     font-size: 20px;
+}
+.table-container{
+    background: #fff;
+    color: #000;
+    width:950px;
+    height: 400px;
+    display: flex;
+    padding-top: 9px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.table-container table{
+    display: block;
+    width: 100%;
 }
 ::-webkit-scrollbar {
     width: 10px;

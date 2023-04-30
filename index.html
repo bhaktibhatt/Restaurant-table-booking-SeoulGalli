@@ -7,7 +7,7 @@
     <title>Reservation | SeoulGalli</title>
 </head>
 <body>
-    <img class="bg-img" src="/Assets/bibmbapbg.jpg" alt="bg-img">
+    <img class="bg-img" src="./Assets/bibmbapbg.jpg" alt="bg-img">
     <div class="main">
         <h1>SeoulGalli</h1>
         <p>Serving you the best Korean food in India!</p>
@@ -17,32 +17,32 @@
             <form action="index.php" method="post">
                 <p>Please fill the fields below for your booking.</p>
                 <div class="inputs-table">
-                    <input type="date" required>
-                    <input type="time" required>
-                    <select required>
-                        <option value="" disabled selected hidden>People</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">4</option>
-                        <option value="4">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
+                    <input type="date" name="date" required>
+                    <input type="time" name="time" required>
+                    <select name="people" required>
+                        <option value="people"disabled selected hidden>People</option>
+                        <option value="1" name="1">1</option>
+                        <option value="2" name="2">2</option>
+                        <option value="2" name="3">3</option>
+                        <option value="3" name="4">4</option>
+                        <option value="4" name="5">5</option>
+                        <option value="6" name="6">6</option>
+                        <option value="7" name="7">7</option>
+                        <option value="8" name="8">8</option>
+                        <option value="9" name="9">9</option>
+                        <option value="10" name="10">10</option>
                     </select>
                 </div>
                 <p>Please Enter phone no and email so that we can contact you.</p>
                 <div class="credentials">
                     <input type="tel" id="phone" name="phone" placeholder="phone no" pattern="[0-9]{10}" required>
-                    <input type="email" placeholder="email" required>
+                    <input type="email" name="email" placeholder="email" required>
                 </div>
                 <div class="btn-div">
-                    <input class="btn" type="submit" value="Book Table">
+                    <input class="btn" type="submit" name="submit" value="Book Table">
                 </div>
             </form>
         </div>
     </div>
-    
 </body>
 </html>
