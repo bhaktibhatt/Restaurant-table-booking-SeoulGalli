@@ -132,8 +132,9 @@ select:hover{
         height: 100%;
     }
     .main  p{
-        font-size: 20px;
-        text-align: center;;
+        font-size: 25px;
+        text-align: center;
+        padding-left: 20px;
     }
     .bg-img{
        display: none;
@@ -147,15 +148,17 @@ select:hover{
     }
     .form-container p{
         margin: 0;
-        font-size: 16px;
+        font-size: 20px;
         text-align: center;
-        margin-right: 0px;
         width: fit-content;
-        margin-left: 20px;
+        padding-right: 20px;
+        padding-left: 40px;
     }
     .inputs-table{
         flex-direction: column;
         width: 450px;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
     .inputs-table input, .inputs-table select{
         margin-top: 30px;
