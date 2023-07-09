@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirm Credentials | SeoulGalli</title>
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./credintials-php.css">
+    <link rel="stylesheet" href="./credentials-php.css">
 </head>
 <body>
 <?php
@@ -32,7 +32,8 @@ if(isset($_POST['submit']))
             </tr>
             <tr>
                 <th>Time</th>
-                <td><?php echo"$time"?></td>
+                <td><?php echo"$time "; 
+                echo intval($time) < 12 ? 'AM' : 'PM';?>&nbsp;</td>
             </tr>
             <tr>
                 <th>People</th>
